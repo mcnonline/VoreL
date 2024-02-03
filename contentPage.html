@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leitura de Conteúdo - VoreL Play</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="main">
+    <h1>VoreL Play - Leitura de Conteúdo</h1>
+
+    <div class="content-squares">
+      <div class="content-square" onclick="navigateTo('liveContent')">
+        <img src="icons/live_icon.png" alt="Conteúdo Ao Vivo">
+        <p>Conteúdo Ao Vivo</p>
+      </div>
+      <div class="content-square" onclick="navigateTo('moviesContent')">
+        <img src="icons/movies_icon.png" alt="Filmes">
+        <p>Filmes</p>
+      </div>
+      <div class="content-square" onclick="navigateTo('seriesContent')">
+        <img src="icons/series_icon.png" alt="Séries">
+        <p>Séries</p>
+      </div>
+    </div>
+
+    <div class="menu-buttons">
+      <button onclick="navigateTo('generalOptions')">Opções Gerais</button>
+      <button onclick="navigateTo('licensingInfo')">Informações de Licenciamento</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="js/contentPage.js"></script>
+</body>
+</html>

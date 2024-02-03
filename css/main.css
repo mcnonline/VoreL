@@ -1,0 +1,84 @@
+/* main.css */
+
+body {
+    /* Adicione ou ajuste conforme necessário */
+}
+
+#main {
+    text-align: center;
+}
+
+#termsPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    overflow-y: auto; /* Adicione esta linha para habilitar a barra de rolagem vertical */
+    max-height: 80%; /* Defina uma altura máxima para o popup */
+    /* Adicione outros estilos conforme necessário */
+}
+
+.popup-content {
+    /* Adicione estilos conforme necessário */
+}
+
+h1 {
+    color: #333;
+}
+
+/* Adição de estilos para os quadrados de conteúdo */
+.content-squares {
+    display: flex;
+    justify-content: center; /* Alinhamento horizontal centralizado */
+    align-items: center; /* Alinhamento vertical centralizado */
+    margin-top: 20px;
+}
+
+.content-square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    background-color: #3498db;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.content-square:hover {
+    background-color: #2980b9;
+}
+
+.content-square img {
+    max-width: 50%; /* Ajuste para garantir que a largura não ultrapasse 30px */
+    max-height: 50%; /* Ajuste para garantir que a altura não ultrapasse 30px */
+    width: auto;
+    height: auto;
+    margin-bottom: 5px; /* Reduzi o espaço abaixo do ícone */
+}
+
+.content-square p {
+    margin: 0; /* Removido a margem para evitar espaçamento adicional */
+}
+
+.menu-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
